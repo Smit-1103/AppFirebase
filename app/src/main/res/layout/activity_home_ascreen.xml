@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="25"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ABD4A4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="13"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/shape">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_main"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="11"
+            app:lottie_autoPlay="true"
+            android:padding="20sp"
+            app:lottie_fileName="95530-password.json"
+            app:lottie_loop="true" app:lottie_speed="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/logout"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            app:lottie_autoPlay="true"
+            android:layout_gravity="left"
+            android:padding="1sp"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="210sp"
+            app:lottie_fileName="logout.json"
+            app:lottie_loop="true" app:lottie_speed="1"/>
+
+    </LinearLayout>
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/btHomeShow"
+        android:layout_width="match_parent"
+        android:layout_margin="30sp"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:textSize="23sp"
+        android:background="@drawable/button"
+        android:textColor="#29665C"
+        android:text="SHOW" />
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/btHomeAdd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="30sp"
+        android:textSize="23sp"
+        android:background="@drawable/button"
+        android:textColor="#29665C"
+        android:text="INSERT" />
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/btHomeUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="30sp"
+        android:textSize="23sp"
+        android:background="@drawable/button"
+        android:textColor="#29665C"
+        android:text="UPDATE" />
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/btHomeDelete"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="30sp"
+        android:textSize="23sp"
+        android:background="@drawable/button"
+        android:textColor="#29665C"
+        android:text="DELETE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+    </LinearLayout>
+
+</LinearLayout>
